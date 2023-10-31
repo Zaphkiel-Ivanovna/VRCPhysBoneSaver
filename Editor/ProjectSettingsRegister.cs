@@ -24,7 +24,7 @@ namespace VRCPhysBoneSaver.Editor
         private static void DrawSettingsInterface(string searchContext)
         {
             GUILayout.BeginHorizontal();
-            GUILayout.Space(10); // Adjust this value to your desired spacing
+            GUILayout.Space(10);
             bool enablePlayModeSave = EditorPrefs.GetBool(ENABLE_PLAYMODE_SAVE_KEY, true);
             bool newEnablePlayModeSave = EditorGUILayout.Toggle("Enable PlayMode Save", enablePlayModeSave);
             GUILayout.EndHorizontal();
